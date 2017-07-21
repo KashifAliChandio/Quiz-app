@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css1/style.css">
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <script src="../js/jquery1.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+     <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+
+            <a href="../index.html" class="navbar-brand"> JS Quiz App </a>
+
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.html" ><strong>HOME</strong></a> </li>
+                    <li><a href="#about" data-toggle="modal"><strong>ABOUT</strong></a> </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>ACCOUNT</strong><b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#sign" data-toggle="modal">Sign in</a></li>
+                            <li><a href="#signUp" data-toggle="modal">Singn Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Main body work started -->
+    <div class="gird">
+        <div id="quiz">
+            <h1>Quiz</h1>
+            <hr style="margin-bottom : 20px">
+            <p id="question"></p>
+            <div class="button">
+                <button id="btn0"> <span id="choice0"></span> </button>
+                <button id="btn1"> <span id="choice1"></span> </button>
+                <button id="btn2"> <span id="choice2"></span> </button>
+                <button id="btn3"> <span id="choice3"></span> </button>
+            </div>
+
+            <hr style="margin-top: 50px" >
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+    
+
+    <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <p class="navbar-text pull-left" > <strong>App Build By Kashif</strong></p>
+        <a href="https://www.facebook.com/MarfChandio" target="_blank" class="navbar-btn btn-primary btn pull-right">Facebook</a>
+    </div>
+</div>
+<!-- bootstrap Modal started about model -->
+<div class="modal  fade" id="about" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="model-header">
+                <center><h2 class="h2">Quiz App Information</h2></center>
+            </div>
+            <div class="modal-body">
+                <p class="h3"> This Application is build as  assignment Of Object in Javascript</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn btn-danger" data-dismiss = "modal"  >Close</a>  
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal  fade" id="sign" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="model-header">
+                <center><h2 class="h2">Sign In</h2></center>
+            </div>
+            <div class="modal-body">
+                <label for="userName"><strong> User Name </strong></label>
+                <br>
+                <input type="text" id="userName" value="user">
+                <br>
+                <lable for ="userPassword"><strong>Password</strong></lable>
+                <br>
+                <input type="text" id="userPassword" value="pass">
+                <br> <br>
+                 <button class="btn btn-primary align-left" data-dismiss = "modal"> <strong>Login</strong></button>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn btn-danger" data-dismiss = "modal"  >Close</a>  
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal  fade" id="signUp" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="model-header">
+                <center><h2 class="h2">Sign Up</h2></center>
+            </div>
+            <div class="modal-body">
+               <label for=><strong> User Name </strong></label>
+                <br>
+                <input type="text" id="userName" >
+                <br>
+                <label for="email"><strong> Email </strong></label>
+                <br>
+                <input type="email" id="email" value="user">
+                <br>
+                <lable for ="userPassword"><strong>Password</strong></lable>
+                <br>
+                <input type="text" id="userPassword" value="pass">
+                <br> <br>
+                 <button class="btn btn-primary align-left" data-dismiss = "modal"> <strong>Login</strong></button>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn btn-danger" data-dismiss = "modal"  >Close</a>  
+              
+            </div>
+        </div>
+    </div>
+</div> -->
+</body>
+<script src="../js2/question.js"></script>
+<script src="../js2/app.js"></script>
+
+<script src="../js/bootstrap.min.js"></script>
+</html>
